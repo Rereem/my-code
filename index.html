@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.task-scheduler {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-scheduler h1 {
+    text-align: center;
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #218838;
+}
+
+.task-list .task {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.task-list .task h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.task-list .task p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.task-list .task button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-list .task button:hover {
+    background-color: #c82333;
+}
+</style>
+<body>
+    <div class="task-scheduler">
+        <h1>Task Scheduler</h1>
+        <div class="task-input">
+            <input type="text" placeholder="Enter task...">
+            <button>Add Task</button>
+        </div>
+        <div class="task-list">
+            <div class="task">
+                <h2>DSA Practice</h2>
+                <p><strong>Priority:</strong> Top</p>
+                <p><strong>Deadline:</strong> 2023-08-24</p>
+                <button>Mark Done</button>
+            </div>
+            <div class="task">
+                <h2>Js Practice</h2>
+                <p><strong>Priority:</strong> Top</p>
+                <p><strong>Deadline:</strong> 2023-09-01</p>
+                <button>Mark Done</button>
+            </div>
+            <div class="task">
+                <h2>Maths Practice</h2>
+                <p><strong>Priority:</strong> Top</p>
+                <p><strong>Deadline:</strong> 2023-08-31</p>
+                <button>Mark Done</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

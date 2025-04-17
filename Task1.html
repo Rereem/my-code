@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Data Entry Form</title>
+    <style>
+        body {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+        table {
+            margin: 0 auto;
+            text-align: left;
+        }
+        th, td {
+            padding: 8px 12px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Data Entry Form</h1>
+    <form>
+    <table>
+        <tr>
+            <td>Name*</td>
+            <td><input type="text" name="name" size="30" required></td>
+            <td>Email*</td>
+            <td><input type="text" name="email" size="30" required></td>
+        </tr>
+        <tr>
+            <td>Date of Birth*</td>
+            <td><input type="text" name="date" size="30"  required placeholder="dd/mm/yyyy"></td>
+            <td>Phone</td>
+            <td><input type="text" name="phone" size="30"></td>
+        </tr>
+        <tr>
+            <td>Gender*</td>
+            <td><input type="radio" name="gender" value="Male" checked="checked"/> Male
+                <input type="radio" name="gender" value="Female"/>Female</td>
+            <td>City*</td>
+            <td><select name="city" required>
+                <option value="Select ">Select a city</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Giza">Giza</option>
+                <option value="Aswan">Aswan</option>
+            </select></td>
+        </tr>
+    </table>
+    <p>
+        <input class="button" type="submit" value="Save">
+        <input class="button" type="reset" value="Reset">
+    </p> 
+</form>
+    
+
+  
+
+    <table border="1">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Edit | Delete</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+        </tr>
+    </table>
+    <p>
+        <a href="#">Prev</a> |
+        <a href="#">Next</a><br>
+        No of Records: 2
+    </p>
+    <div>
+        <input type="checkbox"> Clear all records
+        <button>Clear All</button>
+    </div>
+</body>
+
+</html>
